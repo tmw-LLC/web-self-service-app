@@ -20,7 +20,7 @@
             AuthService.verifyUser(vm.verifyData).then(function () {
                 $mdToast.show(
                     $mdToast.simple()
-                        .textContent('User has been successfully registered')
+                        .textContent('El usuario se ha registrado exitosamente')
                         .position('top right')
                 );
                 $location.path('/login');
@@ -35,7 +35,7 @@
                 }
                 $mdToast.show(
                     $mdToast.simple()
-                        .textContent('Error in creating user: ' + errors)
+                        .textContent('Error en la creacion del usuario: ' + errors)
                         .position('top right')
                 );
 
