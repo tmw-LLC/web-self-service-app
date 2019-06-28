@@ -5,7 +5,7 @@ You can follow this README or you can follow this [video](https://mifosforge.jir
 
 Clone the project:
 
-    $ git clone https://github.com/openMF/web-self-service-app.git
+    $ git clone https://github.com/itzamnamx/web-self-service-app
 
 Install dependencies:
 
