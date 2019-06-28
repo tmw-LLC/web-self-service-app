@@ -60,6 +60,7 @@
   "label.heading.currency": "Currency",
   "label.heading.balance": "Balance",
   "label.heading.totalAccounts": "Total Accounts",
+  "label.heading.totalBalanceAccounts": "Total Balance Accounts",
   "label.heading.savingsAccounts": "Savings Accounts",
   "label.heading.shareAccounts": "Share Accounts",
   "label.heading.totalSavings": "Total Savings",
