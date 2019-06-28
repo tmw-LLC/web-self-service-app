@@ -25,7 +25,7 @@
                                 AccountService.setClientId(res.pageItems[0].id);
                                 $mdToast.show(
                                     $mdToast.simple()
-                                        .content("Successful Login")
+                                        .content("Ingreso Exitoso")
                                         .hideDelay(2000)
                                         .position('top right')
                                 );
@@ -33,7 +33,7 @@
                             } else {
                                 $mdToast.show(
                                     $mdToast.simple()
-                                        .content("No Clients Found")
+                                        .content("Cliente inactivo o incorrecto")
                                         .hideDelay(2000)
                                         .position('top right')
                                 );
@@ -44,7 +44,7 @@
                             vm.authenticating = false;
                             $mdToast.show(
                                 $mdToast.simple()
-                                    .content("Not a Self Service User")
+                                    .content("Cliente inactivo o incorrecto")
                                     .hideDelay(2000)
                                     .position('top right')
                             );
@@ -54,7 +54,7 @@
                     vm.authenticating = false;
                     $mdToast.show(
                         $mdToast.simple()
-                            .content("Invalid Login Credentials")
+                            .content("Revise que el Usuario o su Clave sean correctos")
                             .hideDelay(2000)
                             .position('top right')
                     );
