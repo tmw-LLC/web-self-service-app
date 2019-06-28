@@ -6,7 +6,7 @@
 
           $mdThemingProvider
             .theme('default')
-            .primaryPalette('blue', {
+            .primaryPalette('orange', {
               'default': '600'
             })
             .accentPalette('pink', {
