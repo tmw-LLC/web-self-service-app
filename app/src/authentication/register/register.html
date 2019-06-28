@@ -5,104 +5,104 @@
                 <img width="100%" src="assets/images/MifosX_logo.png">
             </div>
 
-            <div class="title">Create an account</div>
+            <div class="title">Crea tu Cuenta</div>
 
             <form name="registerForm" novalidate ng-submit="submit()">
                 <md-input-container class="md-block" md-no-float>
-                    <input name="accountNumber" ng-model="vm.form.accountNumber" placeholder="Account number"
+                    <input name="accountNumber" ng-model="vm.form.accountNumber" placeholder="Número de Cuenta"
                            required>
                     <div ng-messages="registerForm.accountNumber.$error" role="alert">
                         <div ng-message="required">
-                            <span>Account Number field is required</span>
+                            <span>El Número de Cuenta es Requerido</span>
                         </div>
                     </div>
                 </md-input-container>
                 <md-input-container class="md-block" md-no-float>
-                    <input name="username" ng-model="vm.form.username" placeholder="Username"
+                    <input name="username" ng-model="vm.form.username" placeholder="Usuario"
                            required>
                     <div ng-messages="registerForm.username.$error" role="alert">
                         <div ng-message="required">
-                            <span>Username field is required</span>
+                            <span>El Usuario es requerido</span>
                         </div>
                     </div>
                 </md-input-container>
 
                 <div layout="row">
                     <md-input-container flex class="md-block" md-no-float>
-                        <input name="firstName" ng-model="vm.form.firstName" placeholder="First Name"
+                        <input name="firstName" ng-model="vm.form.firstName" placeholder="Nombre (s)"
                                required>
                         <div ng-messages="registerForm.firstName.$error" role="alert">
                             <div ng-message="required">
-                                <span>First Name field is required</span>
+                                <span>El Nombre es requerido</span>
                             </div>
                         </div>
                     </md-input-container>
                     <md-input-container flex class="md-block" md-no-float>
-                        <input name="lastName" ng-model="vm.form.lastName" placeholder="Last Name"
+                        <input name="lastName" ng-model="vm.form.lastName" placeholder="Apellido(s)"
                                required>
                         <div ng-messages="registerForm.lastName.$error" role="alert">
                             <div ng-message="required">
-                                <span>Last Name field is required</span>
+                                <span>El Apellido es requerido</span>
                             </div>
                         </div>
                     </md-input-container>
                 </div>
 
                 <md-input-container class="md-block" md-no-float>
-                    <input type="email" name="email" ng-model="vm.form.email" placeholder="Email"
+                    <input type="email" name="email" ng-model="vm.form.email" placeholder="Correo Electrónico"
                            ng-pattern="/^.+@.+\..+$/" required>
                     <div ng-messages="registerForm.email.$error" role="alert" multiple>
                         <div ng-message="required">
-                            <span>Email field is required</span>
+                            <span>El Correo Eletrónico es requerido</span>
                         </div>
                         <div ng-message="pattern">
-                            <span>Email must be a valid e-mail address</span>
+                            <span>El Correo Eletrónico debe ser valido</span>
                         </div>
                     </div>
                 </md-input-container>
 
                 <md-input-container class="md-block" md-no-float>
-                    <input type="phone" name="mobile" ng-model="vm.form.mobileNumber" placeholder="Mobile">
+                    <input type="phone" name="mobile" ng-model="vm.form.mobileNumber" placeholder="Teléfono Celular">
                 </md-input-container>
 
                 <md-input-container class="md-block" md-no-float>
-                    <input type="password" name="password" ng-model="vm.form.password" placeholder="Password"
+                    <input type="password" name="password" ng-model="vm.form.password" placeholder="Clave"
                            required>
                     <div ng-messages="registerForm.password.$error" role="alert">
                         <div ng-message="required">
-                            <span>Password field is required</span>
+                            <span>La Clave es requerida</span>
                         </div>
                     </div>
                 </md-input-container>
 
                 <md-input-container class="md-block" md-no-float>
                     <input type="password" name="passwordConfirm" ng-model="passwordConfirm"
-                           placeholder="Password (Confirm)"
+                           placeholder="Clave (Confirmar)"
                            required>
                     <div ng-messages="registerForm.passwordConfirm.$error" role="alert">
                         <div ng-message="required">
-                            <span>Password (Confirm) field is required</span>
+                            <span>Es requerido Confirmar la Clave</span>
                         </div>
                     </div>
                 </md-input-container>
 
                 <div class="terms" layout="row" layout-align="center center">
-                    <md-checkbox name="terms" ng-model="data.cb1" aria-label="I read and accept" required></md-checkbox>
+                    <md-checkbox name="terms" ng-model="data.cb1" aria-label="Los he heido y acepto" required></md-checkbox>
                     <div layout="row" layout-sm="column" layout-align="start center">
-                        <span>I read and accept</span>
-                        <a href="#" class="md-accent-color">terms and conditions</a>
+                        <span>Los he heido y acepto</span>
+                        <a href="#" class="md-accent-color">Términos y Condiciones</a>
                     </div>
                 </div>
 
-                <md-button type="submit" class="md-raised md-accent submit-button" aria-label="CREATE MY ACCOUNT"
+                <md-button type="submit" class="md-raised md-accent submit-button" aria-label="Crear mi Cuenta"
                            ng-disabled="registerForm.$invalid || registerForm.$pristine">
-                    CREATE MY ACCOUNT
+                    Crear mi Cuenta
                 </md-button>
             </form>
 
             <div class="login" layout="row" layout-xs="column" layout-align="center center">
-                <span class="text">Already have an account?</span>
-                <a class="link" ui-sref="login">Log in</a>
+                <span class="text">¿Tienes tu Cuenta?</span>
+                <a class="link" ui-sref="login">Inicia Sesión</a>
             </div>
         </div>
     </div>
